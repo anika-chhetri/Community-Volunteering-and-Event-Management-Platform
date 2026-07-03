@@ -1,0 +1,169 @@
+/* -------------------------
+   GLOBAL DASHBOARD STYLES
+-------------------------- */
+.dashboard-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?crop=edges&fit=crop&w=2200&h=1200&sat=150&exp=-20') 
+              center/cover no-repeat fixed;
+  z-index: -1;
+}
+
+/* Optional overlay */
+.dashboard-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.65));
+  pointer-events: none;
+}
+.dashboard {
+  width: 80%;               /* wide container */
+  max-width: 1400px;        /* max width for large screens */
+  height: 100vh;            /* full viewport height */
+  margin: 0 auto;           /* no top/bottom gap */
+  padding: 60px;            /* inner spacing */
+  background: rgba(255,255,255,0.92);
+  border-radius: 20px;
+  box-shadow: 0 12px 50px rgba(0,0,0,0.15);
+  overflow-y: auto;         /* scroll internally if content exceeds */
+  position: relative;
+  z-index: 1;
+}
+
+.dashboard-inner{position:relative; z-index:2}
+
+.dashboard h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+/* -------------------------
+   PANEL / CARD
+-------------------------- */
+
+.panel {
+  background: rgba(255,255,255,0.88);
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(2,6,23,0.06);
+  backdrop-filter: blur(6px);
+}
+
+.panel h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #1c1c5e;
+}
+
+.panel h4 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.cards {
+  display:flex;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.stat-card{
+  background: linear-gradient(180deg,#ffffff,#f6f8ff);
+  padding:14px 16px;
+  border-radius:12px;
+  min-width:110px;
+  text-align:center;
+  box-shadow:0 6px 20px rgba(90,96,255,0.06);
+}
+
+.stat-num{ font-size:20px; font-weight:700; color:#1c1c5e; }
+.stat-label{ font-size:13px; color:#666; margin-top:6px; }
+
+.small-item{ padding:8px 0; border-bottom:1px dashed #eee; font-size:14px; color:#333; }
+
+/* -------------------------
+   FORMS
+-------------------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+input, textarea, select {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #5b63ff;
+  box-shadow: 0 0 0 2px rgba(90,100,255,0.2);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* -------------------------
+   BUTTONS
+-------------------------- */
+
+button {
+  background: #5b63ff;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #434bfd;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* -------------------------
+   LIST ITEMS
+-------------------------- */
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* -------------------------
+   MESSAGE BAR
+-------------------------- */
+
+.msg {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #e8e9ff;
+  color: #3030a6;
+  font-weight: 500;
+  text-align: center;
+}

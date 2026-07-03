@@ -1,0 +1,21 @@
+/* Full page background ONLY for About.js */
+body.about-background {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  background-image: url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* About content card */
+.about {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px 50px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+}

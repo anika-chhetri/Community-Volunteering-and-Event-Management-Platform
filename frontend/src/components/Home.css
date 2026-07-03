@@ -1,0 +1,81 @@
+/* PAGE BACKGROUND */
+body {
+  background-color: #eef3f7; /* change this to any color you want */
+}
+
+.about-hero {
+  height: 100vh;
+  background-image: url("https://www.unesco.org/sites/default/files/styles/hero_image/public/2019-11/education.jpg?itok=gq6PANRb");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  max-width: 700px;
+  text-align: center;
+}
+
+.home-body,
+.events-area {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.home-body {
+  background: #f5f5f5;
+}
+
+.events-area {
+  background: #ffffff;
+}
+
+.contact-area {
+  padding: 80px 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.contact-form {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 14px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #005fa3;
+}
